@@ -1,4 +1,4 @@
-doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="utf-8" />
@@ -24,14 +24,13 @@ doctype html>
   <main class="container">
     <h1>Mein Bild</h1>
 
-    <!-- Einfaches Bild -->
-    <img class="responsive" src="images/meinbild.jpg" alt="Beschreibung des Bildes" loading="lazy">
+    <!-- Einfaches Bild (verweist auf vorhandene Datei im Repo-Root) -->
+    <img class="responsive" src="Screenshot_2025-11-20-14-08-58-39_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="Beschreibung des Bildes" loading="lazy">
 
     <!-- Alternativ: <picture> für unterschiedliche Auflösungen / Formate -->
     <picture>
-      <source srcset="images/meinbild.avif" type="image/avif">
-      <source srcset="images/meinbild.webp" type="image/webp">
-      <img class="responsive" src="images/meinbild.jpg" alt="Beschreibung des Bildes" loading="lazy">
+      <source srcset="Screenshot_2025-11-20-14-08-58-39_6012fa4d4ddec268fc5c7112cbb265e7.jpg" type="image/jpeg">
+      <img class="responsive" src="Screenshot_2025-11-20-14-08-58-39_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="Beschreibung des Bildes" loading="lazy">
     </picture>
   </main>
 </body>
