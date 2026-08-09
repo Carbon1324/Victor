@@ -1,0 +1,38 @@
+doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bild anzeigen</title>
+  <style>
+    /* Einfaches responsives Styling */
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
+    }
+    img.responsive {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Mein Bild</h1>
+
+    <!-- Einfaches Bild -->
+    <img class="responsive" src="images/meinbild.jpg" alt="Beschreibung des Bildes" loading="lazy">
+
+    <!-- Alternativ: <picture> für unterschiedliche Auflösungen / Formate -->
+    <picture>
+      <source srcset="images/meinbild.avif" type="image/avif">
+      <source srcset="images/meinbild.webp" type="image/webp">
+      <img class="responsive" src="images/meinbild.jpg" alt="Beschreibung des Bildes" loading="lazy">
+    </picture>
+  </main>
+</body>
+</html>
